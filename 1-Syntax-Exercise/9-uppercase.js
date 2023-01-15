@@ -7,7 +7,7 @@ function solve(input){
         let cur = first[i];
         newArr.push(cur.toUpperCase());
     }
-    console.log(newArr.join(' '));
+    console.log(newArr.join(', '));
 }
 
 solve('Hi, how are you?');
