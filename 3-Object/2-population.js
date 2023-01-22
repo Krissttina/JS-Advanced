@@ -1,6 +1,7 @@
 function townPopulation(arr){
     const result = {};
-    for (const line of arr) {
+
+    for (let line of arr) {
        const token = line.split(' <-> ');
        const name = token[0];
        const population = Number(token[1]);
@@ -10,11 +11,9 @@ function townPopulation(arr){
        }else{
         result[name] = population;
        }
-
-       result[name] = population;
     }
 
-    for (const name in result) {
+    for (let name in result) {
         console.log(`${name} : ${result[name]}`);
     }
 }
