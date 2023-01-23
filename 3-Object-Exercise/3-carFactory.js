@@ -26,10 +26,10 @@ function carFactory({model, power, color, carriage, wheelsize}){
             type: carriage,
             color
         },
-        wheelsize: [size, size, size, size]
+        wheels: [size, size, size, size],
     }
 
-    console.table(car);
+    return car;
 }
 
 carFactory({ model: 'VW Golf II',
