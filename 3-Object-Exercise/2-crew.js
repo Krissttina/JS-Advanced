@@ -3,7 +3,7 @@ function solve(worker){
         worker.levelOfHydrated = worker.weight * 0.1 * worker.experience;
         worker.dizziness = false;
     }
-    console.log(worker);
+     return worker;
 }
 
 solve({ weight: 80,
