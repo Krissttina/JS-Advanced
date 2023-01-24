@@ -8,7 +8,7 @@ function solve(arr){
         const curObj = {
             Town: town,
             Latitude: Number(latitude),
-            Longtitude: Number(longtitude),
+            Longitude: Number(longtitude),
         }
         towns.push(curObj)
     }
