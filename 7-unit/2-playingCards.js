@@ -25,6 +25,7 @@ function solve(face, suit){
     }else if (suit in suits == false){
        throw new TypeError('Invalid suit'); 
     }
+    
     const result = {
         face,
         suit,
