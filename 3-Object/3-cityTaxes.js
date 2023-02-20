@@ -14,11 +14,9 @@ function cityRecord(name, population, treasury){
             this.treasury -= Math.floor(this.treasury * percentage / 100);
         }
     }
-    return result;
+    console.table(result);
 }
 
 cityRecord('Tortuga',
-
 7000,
-
 15000)

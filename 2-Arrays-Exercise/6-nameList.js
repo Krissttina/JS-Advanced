@@ -6,7 +6,6 @@ function namesList(arr){
     let print = sorted.shift();
     console.log(`${i+1}.${print}`);
   }
-  
 }
 
 namesList(["John",
