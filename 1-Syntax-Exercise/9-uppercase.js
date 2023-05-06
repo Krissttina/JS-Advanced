@@ -4,10 +4,12 @@ function solve(input){
     let newArr = [];
 
     for(let i = 0; i < first.length; i++){
-        let cur = first[i];
-        newArr.push(cur.toUpperCase());
+        let word = first[i];
+        newArr.push(word.toUpperCase());
     }
     console.log(newArr.join(', '));
 }
 
 solve('Hi, how are you?');
+
+//66pts/100pts

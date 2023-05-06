@@ -1,9 +1,11 @@
-function solve(one, two) {
-  for (let i = 10; i > 1; i--) {
-    if (one % i == 0 && two % i == 0) {
-      console.log(i);
+function solve(a, b) {
+  let devisors = [];
+  for (let i = 1; i <= a; i++) {
+    if (a % i == 0 && b % i == 0) {
+      devisors.push(i);
     }
   }
+  console.log(Math.max(...devisors));
 }
-//not done
-solve(15, 5);
+
+solve(2154, 458);

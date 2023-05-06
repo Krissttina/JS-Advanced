@@ -3,14 +3,11 @@ function biggestElement(arr){
 
     let finIndex = arr.length;
     for(let i = 0; i < finIndex; i++){
-        arr[i].sort((a, b) => a - b);
-        result.push(arr[i][finIndex]);
+        arr[i].sort((a, b) => b - a);
+        result.push(arr[i][0]);
     }
-    let output = result.sort((a, b) => a - b).at(-1);
-    
-    return output;
+
+    return Math.max(...result);
 }
 
-console.log(biggestElement([[20, 50, 10],
-
-    [8, 33, 15]]));
+biggestElement([[3, 5, 7, 12], [-1, 4, 33, 2], [8, 3, 0, 4]]);

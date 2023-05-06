@@ -9,9 +9,11 @@ function sortNumbers(arr){
         const decsend = acsend.sort((a, b) => b - a);
         output.push(decsend[i]);;
     }
-    
+    console.log(output);
     return output;
 }
 
-console.log(sortNumbers([1, 65, 3, 52, 48, 63, 31, -3, 18, 56]));
+sortNumbers([1, 65, 3, 52, 48, 63, 31, -3, 18, 56]);
 //[-3, 65, 1, 63, 3, 56, 18, 52, 31, 48]
+
+//50pts/100pts

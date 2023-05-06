@@ -1,17 +1,27 @@
-function lastNumSequence(n, k){
+function numSequence(n, k){
     let arr = [1];
-    
-    for (let index = 0; index < n - 1; index++) {  
-        let newValue = arr.slice(index).splice(index, k);
-        //presmqtane na stoinostite
-        console.log(newValue);
+    let value = 0;
+    let iner = 0;
 
-        arr.push(Number(newValue));
-        console.log(arr);
+    for (let i = 0; i < n - 1; i++) {  
+        
+        if(i - k < 0){
+           value = arr.slice(0, i + 1)
+        }else if(i - k == 0){
+            value = arr.slice(1, i + 1)
+        }else{
+            value = arr.slice(i - k + 1, i + 1)  
+        }
+
+         iner = 0;
+
+        for (const num of value) {
+            iner += num ;
+        }
+        arr.push(iner);
     }
-    
-   // console.log(arr);
+    return arr;
 }
 
-lastNumSequence(6, 3)
+numSequence(8, 2)
 //[1, 1, 2, 4, 7, 13]
